@@ -1,0 +1,82 @@
+@import url(reset.css);
+
+* {
+  color: aqua;
+}
+
+p {
+  color: blue;
+}
+
+.header-link {
+  color: #657fcc;
+}
+
+a {
+  color: red;
+}
+h1 {
+  color: yellow !important;
+}
+
+#id-title {
+  color: rgb(10, 173, 173);
+}
+.hero-title {
+  color: rgb(45, 188, 16);
+}
+
+p.hero-text {
+  color: rgb(234, 40, 172);
+}
+
+.hero-text {
+  color: rgb(199, 117, 16);
+}
+
+.about-title {
+  color: #657fcc;
+}
+
+.about-text.text {
+  color: red;
+}
+
+.about-title ~ p {
+  color: yellowgreen;
+}
+
+.about-title + p {
+  color: rgb(68, 0, 255);
+}
+
+.about-text {
+  color: green;
+}
+
+.about-text .about-link {
+  color: rgb(14, 4, 202);
+}
+
+.about-link {
+  color: rgb(131, 199, 21);
+}
+
+.exploring-title {
+  color: aquamarine;
+}
+.exploring-text {
+  color: black;
+}
+
+.exploring-item * {
+  color: blueviolet;
+}
+
+.exploring-item > .exploring-title {
+  color: rgb(166, 94, 67);
+}
+
+[class="footer-contacts-address"] {
+  color: rgb(10, 233, 36);
+}
