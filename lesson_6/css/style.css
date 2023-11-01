@@ -1,0 +1,193 @@
+/* Підключення шрифтів */
+/* Dancing script */
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:regular,700&display=swap");
+/* Poppins */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/* Inter */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+/* DM Serif Text */
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:&display=swap");
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Основні стилі */
+
+body {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.container {
+  max-width: 702px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.container-jewels {
+  max-width: 1190px;
+
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+}
+
+.container .header-nav-list {
+  background-color: #fff9f4;
+}
+
+.header-nav-list {
+  text-align: center;
+}
+.header-nav-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header-nav-list .header-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-nav-link {
+  font-family: "Dancing script";
+  font-size: 29px;
+}
+/* section hero*/
+
+.hero-title {
+  font-family: "Dancing script";
+  font-size: 39px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* section consulting */
+.consulting-image {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.consulting-title {
+  color: #37393f;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.consulting-text {
+  line-height: 1.47;
+}
+
+.consulting-text:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.consulting-sub-title {
+  color: #6b77e5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 12px;
+}
+
+.consulting {
+  margin-bottom: 40px;
+}
+
+.benefits-img {
+  vertical-align: top;
+  max-width: 328px;
+  margin-right: 29px;
+}
+.benefits-container {
+  display: inline-block;
+  max-width: 329px;
+}
+.benefits-title {
+  color: #37393f;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+.benefites-text {
+  color: #40ddb6;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 23px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.benefits-item {
+  margin-left: 35px;
+}
+.benefits {
+  margin-bottom: 80px;
+}
+
+/* Jewels */
+
+.jewels-block-text {
+  display: inline-block;
+  max-width: 563px;
+  margin-right: 38px;
+}
+.jewels-top-text {
+  color: #d06b00;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 1.21;
+}
+
+.jewels-title {
+  color: #0e333d;
+  font-family: "DM Serif Text", sans-serif;
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 1.47;
+  margin-bottom: 25px;
+}
+.jewels-bottom-text {
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.jewels-block-img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.jewels-img {
+  vertical-align: top;
+  border-radius: 5px;
+}
+.jewels-img:not(:last-child) {
+  margin-right: 22px;
+}
+
+.jewels {
+  padding: 140px 0 140px 0;
+  margin-bottom: 140px;
+  background-color: #fff9f4;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #fff9f4;
+  padding: 80px 0;
+}
+.footer-up {
+  font-family: "Dancing script";
+  font-size: 39px;
+  margin: 50%;
+}
