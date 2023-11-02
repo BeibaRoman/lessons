@@ -56,11 +56,14 @@ body {
 }
 /* section hero*/
 
+.hero {
+  margin-bottom: 30px;
+}
+
 .hero-title {
   font-family: "Dancing script";
   font-size: 39px;
   text-align: center;
-  margin-bottom: 30px;
 }
 /* section consulting */
 .consulting-image {
@@ -128,7 +131,7 @@ body {
   margin-bottom: 35px;
 }
 .benefits-item {
-  margin-left: 35px;
+  padding-left: 35px;
 }
 .benefits {
   margin-bottom: 80px;
@@ -140,12 +143,14 @@ body {
   display: inline-block;
   max-width: 563px;
   margin-right: 38px;
+  padding: 21px 0 0 0;
 }
 .jewels-top-text {
   color: #d06b00;
   font-size: 28px;
   text-transform: uppercase;
   line-height: 1.21;
+  margin-bottom: 13px;
 }
 
 .jewels-title {
