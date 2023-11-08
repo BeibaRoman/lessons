@@ -1,0 +1,520 @@
+/* підключення шрифтів */
+@import url(fonts.css);
+
+/* скидання стилів */
+@import url(reset.css);
+
+/* загальні стилі */
+body {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.container-licening {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container-project {
+  max-width: 870px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container-clothing {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container-jewellery {
+  max-width: 1142px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container-practice {
+  max-width: 1142px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.accent {
+  color: #40ddb6;
+}
+
+/* основні стилі */
+
+/* Header */
+.header {
+  background-color: #fff9f4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-list {
+  text-align: center;
+}
+.header-item {
+  display: inline-block;
+}
+.header-item:not(:last-child) {
+  margin-right: 120px;
+}
+.header-link {
+  font-family: "dancing script", fantasy;
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* section licening */
+.licening {
+  padding: 150.5px 0;
+}
+
+.licening-top-text span {
+  display: inline-block;
+  background-color: #40ddb6;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.licening-top-text {
+  text-align: center;
+  color: #37393f;
+  font-weight: 500;
+  line-height: 1.21;
+}
+
+.licening-title {
+  color: #37393f;
+
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+
+/* Block icon */
+
+.icon-title,
+.photography-title,
+.fonts-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: left;
+  margin-bottom: 11px;
+}
+.icon-text {
+  line-height: 1.46;
+  margin-bottom: 32px;
+}
+.icon-sub-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: left;
+}
+.icon {
+  margin-bottom: 100px;
+}
+
+/* Block photography */
+
+.photography-text {
+  line-height: 1.46;
+  margin-bottom: 24px;
+}
+.photography-sub-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 8px;
+}
+.photography {
+  margin-bottom: 100px;
+}
+
+/* Block fonts */
+
+.fonts-text {
+  line-height: 1.46;
+}
+
+/* section project */
+.project {
+  padding-top: 50px;
+  padding-bottom: 150.5px;
+}
+
+.project-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.project-text {
+  line-height: 1.46;
+  margin-bottom: 35px;
+}
+.project-text p:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.project-list {
+  padding-left: 25px;
+  margin-bottom: 35px;
+}
+
+.project-list .project-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.project-item span {
+  display: inline-block;
+  background-color: #7d7d7d;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 11px;
+  vertical-align: middle;
+}
+.project-item {
+  font-weight: 500;
+  line-height: 1.46;
+}
+.project-list-ordered {
+  padding-left: 15px;
+  margin-bottom: 35px;
+}
+.project-item-ordered {
+  font-weight: 500;
+  line-height: 1.46;
+}
+
+.project-list-ordered .project-item-ordered:not(:last-child) {
+  margin-bottom: 35px;
+}
+.project-text.last-text {
+  margin-bottom: 0;
+}
+
+/* section clothing */
+.clothing {
+  padding: 100px 0;
+}
+
+.clothing-title span {
+  display: inline-block;
+  width: 6px;
+  height: 28px;
+  background-color: #8a33fd;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-left: -22px;
+}
+
+.clothing-title {
+  color: #3c4242;
+  font-family: "CoreSansC", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+  margin-bottom: 30px;
+}
+
+.clothing-sub-title {
+  color: #807d7e;
+  font-family: "CoreSansC", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+.clothing-text {
+  color: #807d7e;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+
+.clothing-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.clothing-text.bottom-text {
+  margin-bottom: 20px;
+}
+
+.clothing-link {
+  color: #807d7e;
+  font-family: "CoreSansC", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+/* section jewellery */
+
+.jewellery {
+  padding: 230px 0;
+  font-size: 0;
+}
+
+.jewellery-left-block {
+  display: inline-block;
+  padding: 73px 0;
+  max-width: 503px;
+  margin-right: 85px;
+  vertical-align: top;
+}
+.jewellety-top-text {
+  color: #d58417;
+  font-family: "Cormorant Infant", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+.jewellery-title {
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 31px;
+}
+.jewellery-text {
+  color: #606060;
+  font-family: "Cormorant Infant", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.jewellery-right-block {
+  display: inline-block;
+  font-size: 0;
+}
+
+.jewellery-img-left,
+.jewellery-img-right {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 235px;
+  border: 1px solid #502203;
+}
+.jewellery-img-left {
+  margin-right: 30px;
+  width: 177px;
+  height: 336px;
+}
+.jewellery-img-right {
+  width: 307px;
+  height: 500px;
+}
+
+.jewellery-img-left img {
+  border-radius: 235px;
+  padding-top: 14px;
+  margin-left: -10px;
+}
+
+.jewellery-img-right img {
+  border-radius: 235px;
+  padding-top: 19px;
+  margin-left: -11px;
+}
+
+/* section practice */
+
+.practice-title {
+  margin-bottom: 25px;
+  font-family: "dancing script", fantasy;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.practice {
+  padding: 80px 0;
+}
+
+.border-block-one {
+  width: 400px;
+  margin: 0 auto;
+  background-color: purple;
+  color: white;
+  border: 10px solid pink;
+  margin-bottom: 30px;
+}
+
+.border-block-two {
+  background-color: rgb(218, 88, 49);
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 15px dotted green;
+  margin-bottom: 35px;
+}
+
+.border-block-three {
+  background-color: olivedrab;
+  color: rgb(244, 236, 236);
+  max-width: 250px;
+  margin: 0 auto;
+  border: 20px dashed brown;
+  margin-bottom: 29px;
+}
+
+.border-block-four {
+  max-width: 350px;
+  background-color: #1e1e7e;
+  margin: 0 auto;
+  border: 18px double black;
+  margin-bottom: 32px;
+}
+
+.border-block-five {
+  background-color: lightblue;
+  max-width: 500px;
+  margin: 0 auto;
+  border-top: 10px solid #000;
+  border-right: 14px dotted blue;
+  border-bottom: 18px dashed palevioletred;
+  border-left: 20px double #994d4d;
+  margin-bottom: 30px;
+}
+
+.border-block-six {
+  max-width: 540px;
+  background-color: lightgrey;
+  margin: 0 auto;
+  color: white;
+  border: 50px solid transparent;
+  margin-bottom: 20px;
+}
+
+.border-block-six a {
+  border-bottom: 4px solid red;
+}
+
+.border-block-seven {
+  max-width: 600px;
+  background-color: #8a33fd;
+  margin: 0 auto;
+  color: white;
+  border: 30px solid yellow;
+  margin-bottom: 32px;
+}
+
+.border-block-seven a {
+  border-bottom: 2px solid yellow;
+}
+
+.border-block-seven:hover {
+  border: 30px solid green;
+}
+
+.border-block-seven a:hover {
+  border-bottom: 2px solid green;
+}
+
+.inline {
+  border: 3px solid red;
+  line-height: 2.5;
+}
+
+.outline-block-one {
+  max-width: 300px;
+  background-color: lightblue;
+  margin: 0 auto;
+  outline: 30px solid red;
+  margin-bottom: 50px;
+}
+
+.outline-block-one a:focus {
+  outline: 30px solid black;
+}
+
+.outline-block-two {
+  background-color: lightblue;
+  outline: 5px solid yellowgreen;
+  line-height: 2.5;
+}
+
+.border-radius-one {
+  max-width: 600px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: rgb(0, 255, 174);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.border-radius-two {
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  border-radius: 10px 15px 30px 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.border-radius-three {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  box-shadow: inset 0 0 15px black;
+  opacity: 0.4;
+}
+
+.border-radius-four {
+  width: 500px;
+  height: 500px;
+  background-color: purple;
+  border-radius: 83% 17% 44% 56% / 27% 0% 100% 73%;
+  box-shadow: 5px 5px 20px black, -5px -5px 20px black;
+}
+
+/* footer */
+.footer {
+  padding: 30px 0;
+  background-color: #fff9f4;
+  box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.12), 0px -1px 1px rgba(0, 0, 0, 0.14),
+    0px -2px 1px rgba(0, 0, 0, 0.2);
+}
+.footer-container {
+  max-width: 100px;
+  margin: 0 auto;
+}
+.footer-link {
+  font-family: "dancing script", fantasy;
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+  padding: 32px 0 32px 0;
+}
