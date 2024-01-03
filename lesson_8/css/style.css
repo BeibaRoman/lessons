@@ -1,0 +1,68 @@
+/* підключення шрифтів */
+@import url(fonts.css);
+
+/* скидання стилів */
+@import url(reset.css);
+
+/* загальні стилі */
+body {
+  font-family: "inter", sans-serif;
+}
+
+/* header */
+.header {
+  background-color: #f4f4f4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 120px;
+}
+.nav-link {
+  font-family: "dancing script", fantasy;
+  font-size: 36px;
+  color: #303030;
+  display: block;
+  padding: 32px 0;
+}
+
+/* section practice */
+.practice {
+  padding: 145px 0;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.practice-title {
+  font-family: "dancing script", fantasy;
+  font-size: 50px;
+  color: #60636f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.block-color {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: red;
+  margin-bottom: 33px;
+}
+
+.inline-color {
+  background-color: lightskyblue;
+  line-height: 2;
+}
