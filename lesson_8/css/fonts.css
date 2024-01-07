@@ -6,3 +6,45 @@
 
 /* dancing script */
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap");
+
+/* CoreSansC */
+@font-face {
+  font-family: "CoreSansC";
+  src: url("CoreSansC-65Bold.woff2") format("woff2"),
+    url("CoreSansC-65Bold.woff") format("woff");
+  font-weight: 650;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Causten*/
+@font-face {
+  font-family: "Causten";
+  src: url("Causten-Semi-Bold.woff2") format("woff2"),
+    url("Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("Causten-Regular.woff2") format("woff2"),
+    url("Causten-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("Causten-Light.woff2") format("woff2"),
+    url("Causten-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
