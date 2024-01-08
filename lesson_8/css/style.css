@@ -375,7 +375,7 @@ body {
 }
 .projects-img {
   height: 501px;
-  width: 384px;
+  min-width: 384px;
   margin-bottom: 24px;
 }
 
@@ -434,7 +434,7 @@ body {
   font-weight: 600;
   line-height: 1.19;
   letter-spacing: 0.56px;
-  background: url(../img/rectangle.svg) no-repeat;
+  background: url(../img/rectangle.svg) 0 0 no-repeat;
   padding-left: 21px;
   margin-bottom: 30px;
 }
@@ -521,7 +521,7 @@ body {
   font-family: "CoreSansC", sans-serif;
   font-size: 34px;
   font-weight: 800;
-  line-height: 1.47;
+  line-height: 1.235;
   letter-spacing: 0.208px;
   margin-bottom: 30px;
 }
@@ -538,6 +538,7 @@ body {
   color: #fff;
 }
 .fashion-link {
+  display: inline-block;
   border-radius: 8px;
   padding: 12px 44px;
   background: #fff;
