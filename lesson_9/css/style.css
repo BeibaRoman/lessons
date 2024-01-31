@@ -732,6 +732,8 @@ input:focus {
 /* jewellery section */
 
 .jewellery {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .jewellery-container {
   max-width: 1244px;
@@ -753,16 +755,49 @@ input:focus {
   vertical-align: top;
   margin-top: 109px;
 }
+
+.jewellery-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 62%;
+  margin-top: 10px;
+  background-color: #78473b;
+  transition: width 0.9s ease;
+}
+
+.jewellery-title:hover::after {
+  width: 0;
+}
+
 .jewellery-card-1 {
   display: inline-block;
   vertical-align: top;
   margin-right: 55px;
-  border: 1px solid #000;
 }
+.jewellery-card-1:first-of-type {
+  padding-top: 32px;
+}
+
+.img-wrap {
+  max-width: 334px;
+  max-height: 381px;
+  border: 1px solid #000;
+  margin-bottom: 34px;
+}
+
 .jewellery-img {
+  width: 100%;
   margin-top: 9px;
   margin-left: 10px;
+  transition: all 0.5s;
 }
+
+.jewellery-img:hover {
+  margin-top: 0;
+  margin-left: 0;
+}
+
 .jewellery-top-text {
   color: #000;
 
@@ -793,6 +828,7 @@ input:focus {
   font-weight: 700;
   line-height: 1.13;
   max-width: 334px;
+  margin-bottom: 31px;
 }
 
 /* Footer */
