@@ -9,165 +9,334 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="id-header">
     <div class="container">
       <a class="header-logo" href="">Lesson <span>9</span> </a>
       <nav class="headr-nav">
         <ul class="header-list">
-          <li class="header-item"><a href="index.html" class="header-link">Practice</a></li>
-          <li class="header-item"><a href="homework.html" class="header-link">Homework</a></li>
-          <li class="header-item"><a href="" class="header-link">Game</a></li>
+          <li class="header-item"><a href="#id-practice" class="header-link">Practice</a></li>
+          <li class="header-item"><a href="#id-homework" class="header-link" id="homework">Homework</a></li>
+          <li class="header-item"><a href="#id-game" class="header-link">Game</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
 
-      <div class="container">
-        <h1 class="hero-title">Pseudo-classes</h1>
-        <p class="hero-hover-text">Hover</p>
-        <a href="" class="hero-link-hover">Hover your mouse over me</a>
-        <p class="hero-active-text">Active</p>
-        <a href="" class="hero-link-active">Click on me </a>
-        <p class="hero-visited-text">Visited</p>
-        <ul class="hero-list-visited">
-          <li class="hero-visited-item">
-            <a class="hero-visited-link" href="https://developer.mozilla.org/en-US/">
-              MDN Web Docs
-            </a>
-          </li>
-          <li class="hero-visited-item">
-            <a class="hero-visited-link" href="https://www.w3schools.com/">
-              W3Schools
-            </a>
-          </li>
-          <li class="hero-visited-item">
-            <a class="hero-visited-link" href="https://www.freecodecamp.org/">
-              freeCodeCamp
-            </a>
-          </li>
-        </ul>
-        <p class="hero-focus-text">Focus</p>
-        <ul class="hero-input-focus">
-          <li class="hero-input-focus"><input type="text"></li>
-          <li class="hero-input-focus"><input type="text"></li>
-          <li class="hero-input-focus"><input type="text"></li>
-        </ul>
-        <p class="hero-target-text">Target</p>
-        <ul class="hero-target-list">
-          <li class="hero-target-item"><a href="#box-1" class="hero-target-link">Open box #1</a></li>
-          <li class="hero-target-item"><a href="#box-2" class="hero-target-link">Open box #2</a></li>
-          <li class="hero-target-item"><a href="#box-3" class="hero-target-link">Open box #3</a></li>
-        </ul>
-        <ul class="targer-list-box">
-          <li class="target-item-box first" id="box-1"></li>
-          <li class="target-item-box second" id="box-2"></li>
-          <li class="target-item-box third" id="box-3"></li>
-        </ul>
-      </div>
-    </section>
-    <section class="position">
-      <div class="container">
-        <h2 class="position-title">Pseudo-classes position in code</h2>
-        <h3 class="position-sub-title">Pseudo-classes position in code :first-child</h3>
-        <div class="position-block1">
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-        </div>
-        <h3 class="position-sub-title">Pseudo-classes position in code :last-child</h3>
-        <div class="position-block2">
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-        </div>
-        <h3 class="position-sub-title">Pseudo-classes position in code :first-of-type</h3>
-        <div class="position-block3">
-          <span class="span-position1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aperiam!</span>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-        </div>
-        <h3 class="position-sub-title">Pseudo-classes position in code :last-of-type</h3>
-        <div class="position-block4">
 
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
-            aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam illum.
-          </p>
-          <span class="span-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aperiam!</span>
-        </div>
-        <h3 class="position-sub-title">Pseudo-classes position in code :nth-child(odd/even)</h3>
-        <ul class="position-nth">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
 
-        <h3 class="position-sub-title">Pseudo-classes position in code :nth-child(an+b)</h3>
-        <div class="block">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+    <section class="practice-section" id="id-practice">
+      <div class="hero">
+
+        <div class="container">
+          <h2 class="hero-title">Pseudo-classes</h2>
+          <p class="hero-hover-text">Hover</p>
+          <a href="" class="hero-link-hover">Hover your mouse over me</a>
+          <p class="hero-active-text">Active</p>
+          <a href="" class="hero-link-active">Click on me </a>
+          <p class="hero-visited-text">Visited</p>
+          <ul class="hero-list-visited">
+            <li class="hero-visited-item">
+              <a class="hero-visited-link" href="https://developer.mozilla.org/en-US/">
+                MDN Web Docs
+              </a>
+            </li>
+            <li class="hero-visited-item">
+              <a class="hero-visited-link" href="https://www.w3schools.com/">
+                W3Schools
+              </a>
+            </li>
+            <li class="hero-visited-item">
+              <a class="hero-visited-link" href="https://www.freecodecamp.org/">
+                freeCodeCamp
+              </a>
+            </li>
+          </ul>
+          <p class="hero-focus-text">Focus</p>
+          <ul class="hero-input-focus">
+            <li class="hero-input-focus"><input type="text"></li>
+            <li class="hero-input-focus"><input type="text"></li>
+            <li class="hero-input-focus"><input type="text"></li>
+          </ul>
+          <p class="hero-target-text">Target</p>
+          <ul class="hero-target-list">
+            <li class="hero-target-item"><a href="#box-1" class="hero-target-link">Open box #1</a></li>
+            <li class="hero-target-item"><a href="#box-2" class="hero-target-link">Open box #2</a></li>
+            <li class="hero-target-item"><a href="#box-3" class="hero-target-link">Open box #3</a></li>
+          </ul>
+          <ul class="targer-list-box">
+            <li class="target-item-box first" id="box-1"></li>
+            <li class="target-item-box second" id="box-2"></li>
+            <li class="target-item-box third" id="box-3"></li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section class="pse-element">
-      <div class="container">
-        <h2 class="pse-element-title">Pseudo-elements ::before</h2>
-        <ul class="pse-element-list">
-          <li class="pse-element-item">Text-1 Lorem ipsum dolor sit amet.</li>
-          <li class="pse-element-item">Text-2 Lorem ipsum dolor sit amet.</li>
-          <li class="pse-element-item">
-            Text-3 Lorem ipsum dolor sit amet.
-          </li>
-          <li class="pse-element-item">
-            Text-4 Lorem ipsum dolor sit amet.
-          </li>
-          <li class="pse-element-item">
-            Text-5 Lorem ipsum dolor sit amet.
-          </li>
-        </ul>
+      <div class="position">
+        <div class="container">
+          <h2 class="position-title">Pseudo-classes position in code</h2>
+          <h3 class="position-sub-title">Pseudo-classes position in code :first-child</h3>
+          <div class="position-block1">
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+          </div>
+          <h3 class="position-sub-title">Pseudo-classes position in code :last-child</h3>
+          <div class="position-block2">
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+          </div>
+          <h3 class="position-sub-title">Pseudo-classes position in code :first-of-type</h3>
+          <div class="position-block3">
+            <span class="span-position1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              aperiam!</span>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+          </div>
+          <h3 class="position-sub-title">Pseudo-classes position in code :last-of-type</h3>
+          <div class="position-block4">
+
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam alias dolore ea dicta magni
+              aspernatur ratione? Rem facere fuga nemo doloribus nihil delectus laboriosam unde quia, nisi, veniam
+              illum.
+            </p>
+            <span class="span-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aperiam!</span>
+          </div>
+          <h3 class="position-sub-title">Pseudo-classes position in code :nth-child(odd/even)</h3>
+          <ul class="position-nth">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <h3 class="position-sub-title">Pseudo-classes position in code :nth-child(an+b)</h3>
+          <div class="block">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pse-element">
+        <div class="container">
+          <h2 class="pse-element-title">Pseudo-elements ::before</h2>
+          <ul class="pse-element-list">
+            <li class="pse-element-item">Text-1 Lorem ipsum dolor sit amet.</li>
+            <li class="pse-element-item">Text-2 Lorem ipsum dolor sit amet.</li>
+            <li class="pse-element-item">
+              Text-3 Lorem ipsum dolor sit amet.
+            </li>
+            <li class="pse-element-item">
+              Text-4 Lorem ipsum dolor sit amet.
+            </li>
+            <li class="pse-element-item">
+              Text-5 Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+
+
+
+    <section class="homework-section" id="id-homework">
+      <div class="consulting">
+        <div class="consulting-container">
+          <h2 class="consulting-title">Why Us For International Business Management Consulting!
+          </h2>
+          <div class="text">
+            <p>Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer
+              service
+              with robust ideas dynamically innovated resources leveling customer service for state of the art customer
+              service innovate product for reliable supply engage web services cutting-edge deliverables.</p>
+          </div>
+          <h4 class="sub-title">Proactively envisioned multimedia based expertise media growth superior
+            collaboration.</h4>
+          <div class="text">
+            <p>One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage
+              web services cutting-edge deliverables.</p>
+          </div>
+          <div class="benefits-container">
+            <div class="benefits-img">
+              <img src="img/benefits.jpg" alt="benefits">
+            </div>
+            <div class="benefits-block">
+              <h3 class="benefits-title">Our benefits</h3>
+              <h4 class="sub-title">Incubate standards compliant
+                channels benefits.</h4>
+              <ol class="benefits-list">
+                <li class="benefits-item">Credibly reintermediate backend</li>
+                <li class="benefits-item">Holistically foster superior</li>
+                <li class="benefits-item">Distinctively exploit optimal</li>
+              </ol>
+            </div>
+          </div>
+          <h2 class="consulting-title">Frequently Asked Questions</h2>
+          <div class="text">
+            <p>Leveling customer service for state of the art customer service innovate product for reliable supply
+              engage
+              web services cutting-edge deliverables.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="business">
+        <div class="business-container">
+          <p class="business-top-text">Welcome Whitecollar</p>
+          <h2 class="business-title">We Care About Your
+            Business Plan.</h2>
+          <div class="text">
+            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to
+              corporate strategy foster collaborative thinking to further the overal.</p>
+            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to
+              corporate strategy </p>
+          </div>
+          <ul class="business-list">
+            <li class="business-item">
+              <h3 class="business-sub-title">Our Vision</h3>
+              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta clickthroughs.</p>
+            </li>
+            <li class="business-item">
+              <h3 class="business-sub-title">Our Mision</h3>
+              <p>Podcasting operational change management inside of workflows to establish a framework.</p>
+            </li>
+          </ul>
+          <a href="#" class="business-button">More About Us</a>
+
+        </div>
+      </div>
+      <div class="work">
+        <div class="work-container">
+          <p class="work-top-text">Work Process</p>
+          <h2 class="work-title">
+            How We Work
+          </h2>
+          <ul class="work-list">
+            <li class="work-item">
+              <h2 class="work-sub-title">Make Appointment</h2>
+              <p class="work-text">Leverage agile frameworks provide
+                synopsishigh level overviews
+                value proposition. </p>
+              <h4 class="work-bottom-text">Testimonials</h4>
+            </li>
+            <li class="work-item">
+              <h2 class="work-sub-title">Consultation</h2>
+              <p class="work-text">Leverage agile frameworks provide
+                synopsishigh level overviews
+                value proposition. </p>
+              <h4 class="work-bottom-text">Testimonials</h4>
+            </li>
+            <li class="work-item">
+              <h2 class="work-sub-title">Enjoy the Service</h2>
+              <p class="work-text">Leverage agile frameworks provide
+                synopsishigh level overviews
+                value proposition. </p>
+              <h4 class="work-bottom-text">Testimonials</h4>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <div class="jewellery">
+        <div class="jewellery-container">
+          <h2 class="jewellery-title">We Develop Create Custom Jewels.</h2>
+
+
+          <a href="#" class="jewellery-card-1">
+
+            <div class="img-wrap"> <img src="img/jewellery-1.jpg" alt="jewellery" class="jewellery-img"></div>
+
+            <p class="jewellery-top-text">Embossed hoop earrings</p>
+            <p class="jewellery-bottom-text">$144.00</p>
+          </a>
+          <a href="#" class="jewellery-card-2">
+            <h2 class="jewellery-sub-title">#02
+              new jewellery collection</h2>
+            <div class="img-wrap">
+              <img src="img/jewellery-2.jpg" alt="jewellery" class="jewellery-img">
+            </div>
+            <p class="jewellery-top-text">Embossed hoop earrings</p>
+            <p class="jewellery-bottom-text">$144.00</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="game-section" id="id-game">
+      <h2 class="game-title">Let's play some GAME!</h2>
+      <div class="game">
+        <div class="game-line-1 game-line"></div>
+        <div class="game-line-2 game-line"></div>
+        <div class="game-line-3 game-line"></div>
+        <div class="game-line-4 game-line"></div>
+        <div class="game-line-5 game-line"></div>
+        <div class="game-line-6 game-line"></div>
+        <div class="game-line-7 game-line"></div>
+        <div class="game-line-8 game-line"></div>
+        <div class="game-winner">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main-nav-section">
+      <h1 class="main-title">Use Header to navigate the page ! </h1>
+    </section>
+
 
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p class="footer-logo ">Lesson 9</p>
+    <div class="footer-container">
+      <a href="#id-header" class="footer-link">Lesson-9</a>
     </div>
   </footer>
 

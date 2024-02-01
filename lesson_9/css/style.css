@@ -56,8 +56,8 @@ body {
   display: inline-block;
   font-size: 0;
 }
-.header-list {
-}
+/* .header-list {
+} */
 .header-item {
   display: inline-block;
 }
@@ -75,7 +75,19 @@ body {
 }
 
 /* main */
+
+/* section practice */
+
+.practice-section {
+  display: none;
+}
+
+.practice-section:target {
+  display: block;
+}
+
 /* section hero */
+
 .hero {
   padding: 50px 0;
   text-align: center;
@@ -442,6 +454,15 @@ input:focus {
 
 .pse-element-item:hover::after {
   background-color: #625043;
+}
+
+/* section homework */
+.homework-section {
+  display: none;
+}
+
+.homework-section:target {
+  display: block;
 }
 
 /* consultion section */
@@ -831,17 +852,164 @@ input:focus {
   margin-bottom: 31px;
 }
 
+/* game */
+
+.game-section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  display: none;
+}
+
+.game-section:target {
+  display: block;
+}
+
+.game-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  color: #37393f;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.game {
+  /* max-height: 650px; */
+  text-align: initial;
+  font-size: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-line {
+  background-color: #40ddb6;
+}
+.game-line-1 {
+  width: 50px;
+  height: 50px;
+}
+
+.game-line-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.game-line-1:hover + .game-line-2,
+.game-line-2:hover {
+  width: 100%;
+}
+
+.game-line-3 {
+  width: 50px;
+  height: 80px;
+  margin-left: auto;
+  visibility: hidden;
+}
+
+.game-line-2:hover + .game-line-3,
+.game-line-3:hover {
+  visibility: visible;
+}
+
+.game-line-4 {
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  visibility: hidden;
+}
+
+.game-line-3:hover + .game-line-4,
+.game-line-4:hover {
+  visibility: visible;
+}
+
+.game-line-5 {
+  width: 50px;
+  height: 150px;
+  visibility: hidden;
+}
+.game-line-4:hover + .game-line-5,
+.game-line-5:hover {
+  visibility: visible;
+}
+
+.game-line-6 {
+  width: 50%;
+  height: 40px;
+  visibility: hidden;
+}
+
+.game-line-5:hover + .game-line-6,
+.game-line-6:hover {
+  visibility: visible;
+}
+
+.game-line-7 {
+  width: 30px;
+  height: 80px;
+  visibility: hidden;
+  margin: 0 47.5%;
+}
+
+.game-line-6:hover + .game-line-7,
+.game-line-7:hover {
+  visibility: visible;
+}
+.game-line-8 {
+  width: 30px;
+  height: 30px;
+  background-color: #ff6c00;
+  visibility: hidden;
+  margin: 0 47.5%;
+}
+
+.game-line-7:hover + .game-line-8,
+.game-line-8:hover {
+  visibility: visible;
+}
+
+.game-winner {
+  visibility: hidden;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.game-line-8:hover + .game-winner,
+.game-winner:hover {
+  visibility: visible;
+  background: url(../img/winner.jpg) center / contain no-repeat;
+}
+
+/* main-nav-section */
+.main-nav-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  color: #37393f;
+  text-align: center;
+}
+
 /* Footer */
 .footer {
   padding: 70px 0 70px;
   background-color: #7d7d7d;
 }
 
-.footer-logo {
+.footer-container {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.footer-link {
   font-family: "Poppins", sans-serif;
-  color: #ff6c00;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
-
+  display: block;
+  color: #ff6c00;
+  padding: 32px 0 32px 0;
   text-align: center;
 }
