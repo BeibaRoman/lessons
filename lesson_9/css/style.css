@@ -592,8 +592,8 @@ input:focus {
   font-weight: 700;
   line-height: 1.21;
 
-  margin-right: 260px;
   margin-bottom: 10px;
+  max-width: 416px;
 }
 .text > p:not(:last-child) {
   margin-bottom: 16px;
@@ -658,7 +658,7 @@ input:focus {
 .work-container {
   max-width: 1250px;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .work-top-text {
@@ -774,7 +774,7 @@ input:focus {
   line-height: 1.15;
   margin-right: 3px;
   vertical-align: top;
-  margin-top: 109px;
+  padding-top: 109px;
 }
 
 .jewellery-title::after {
