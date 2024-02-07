@@ -688,40 +688,35 @@ input:focus {
   line-height: 1.21;
   margin-bottom: 100px;
 }
+
 .work-list {
   font-size: 0;
 }
 .work-item {
   display: inline-block;
+  padding-top: 36px;
   max-width: 386px;
-  padding: 58px 43px;
+  text-align: center;
+}
+
+.work-wrap-card {
+  padding: 29px 43px 58px;
   background-color: #f4f4f4;
 }
-.work-item:not(:last-child) {
-  margin-right: 31px;
-}
 
-.work-item::before {
-  content: "";
-  display: inline-block;
+.work-img {
   width: 72px;
   height: 72px;
-  margin: -100px 114px 22px;
+  border-radius: 50%;
+  margin-top: -65px;
 }
 
-.work-item:first-child::before {
-  content: "";
-  background: url(../img/Icon-1.svg) center / cover no-repeat;
+.work-wrap-text {
+  width: 300px;
 }
 
-.work-item:nth-child(2)::before {
-  content: "";
-  background: url(../img/Icon-2.svg) center / cover no-repeat;
-}
-
-.work-item:last-child::before {
-  content: "";
-  background: url(../img/Icon-3.svg) center / cover no-repeat;
+.work-item:not(:last-child) {
+  margin-right: 31px;
 }
 
 .work-sub-title {
@@ -748,6 +743,10 @@ input:focus {
   font-weight: 600;
   line-height: 1.2;
   text-transform: capitalize;
+}
+
+.work-bottom-text:hover {
+  color: rgb(19, 96, 159);
 }
 
 /* jewellery section */
