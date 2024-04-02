@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 11</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header" id="id-header">
+      <div class="header__container">
+        <nav class="navigation__menu menu">
+          <a href="index.html" class="logo">Lesson 11</a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Menu</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Sub item-1</a>
+                  <ul class="third-sub-menu">
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-1</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Sub item-2</a>
+                  <ul class="third-sub-menu">
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-1</a>
+                    </li>
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-2</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Sub item-3</a>
+                  <ul class="third-sub-menu">
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-1</a>
+                    </li>
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-2</a>
+                    </li>
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Sub item-4</a>
+                  <ul class="third-sub-menu">
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-1</a>
+                    </li>
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-2</a>
+                    </li>
+                    <li class="third-sub-menu__item">
+                      <a href="#" class="third-sub-menu__link">#Item-3</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#id-practice" class="menu__link">Practice</a>
+            </li>
+            <li class="menu__item">
+              <a href="page_homework.html" class="menu__link">Homework</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <h1 class="page__title" id="id-practice">Practice: positioning!</h1>
+        <div class="side">
+          <h2 class="side__title">Value properties position</h2>
+          <ul class="menu-side">
+            <li class="menu-side__item">
+              <a href="#" class="menu-side__link">Relative</a>
+              <ul class="sub-menu-side">
+                <li class="sub-menu-side__item">
+                  <a href="#id-relative" class="sub-menu-side__link">page-relative</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-side__item">
+              <a href="#" class="menu-side__link">Absolute</a>
+              <ul class="sub-menu-side">
+                <li class="sub-menu-side__item">
+                  <a href="#id-absolute" class="sub-menu-side__link">page-absolute</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-side__item">
+              <a href="#" class="menu-side__link">Fixed</a>
+              <ul class="sub-menu-side">
+                <li class="sub-menu-side__item">
+                  <a href="#id-fixed" class="sub-menu-side__link">page-fixed</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-side__item">
+              <a href="#" class="menu-side__link">Sticky</a>
+              <ul class="sub-menu-side">
+                <li class="sub-menu-side__item">
+                  <a href="#id-sticky" class="sub-menu-side__link">page-sticky</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="relative relative--margin" id="id-relative">
+            <h2 class="relative__title">Position - relative!</h2>
+            <div class="relative__block-1">Block-1</div>
+            <div class="relative__block-2">Block-2</div>
+            <div class="relative__block-3">Block-3</div>
+          </div>
+          <div class="absolute absolute--margin" id="id-absolute">
+            <h2 class="absolute__title">Position - absolute!</h2>
+            <div class="absolute__block-1">Block-1</div>
+            <div class="absolute__block-2">Block-2</div>
+            <div class="absolute__block-3">Block-3</div>
+          </div>
+          <div class="fixed" id="id-fixed">
+            <h2 class="fixed__title">Position - fixed!</h2>
+            <p class="fixed__text">Ball right</p>
+            <div class="fixed__block"></div>
+          </div>
+          <div class="sticky" id="id-sticky">
+            <h2 class="sticky__title">Position - sticky!</h2>
+            <div class="sticky__block-1">Block-1</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam alias iusto, assumenda
+              aut soluta! Autem eaque laborum minus repudiandae vitae nostrum, architecto quam molestiae illo pariatur
+              non asperiores quod nisi rem tempore maxime minima nobis magnam neque explicabo a fugiat repellat
+              mollitia. Cumque minus itaque accusamus commodi natus fugiat aperiam distinctio odio ut necessitatibus!
+              Doloremque illum doloribus rerum asperiores velit? Nisi, non? Dolorum neque minus repellendus assumenda ex
+              accusantium vitae cupiditate sunt aliquam ab explicabo saepe eligendi facilis ducimus, commodi vero
+              impedit repudiandae nisi, temporibus reiciendis earum! Voluptates eos tenetur ducimus, expedita molestias
+              ipsam sint, hic adipisci sit eum magni ab perferendis sapiente aliquam et fugiat molestiae error
+              exercitationem praesentium assumenda? Sed harum mollitia deleniti fugit, et vel nobis, itaque numquam
+              eaque ex pariatur iste, at expedita magni facere? Eius animi, similique tenetur quis deserunt perspiciatis
+              minus ea eum delectus repudiandae alias vel voluptate consectetur. Soluta amet explicabo repellat magni,
+              dolores iure, facere possimus officiis libero nihil mollitia dolore dignissimos voluptatem inventore
+              consequatur earum provident sunt? Voluptatem magnam nostrum modi perspiciatis a dolore maiores culpa
+              eligendi? Velit ipsa omnis, sunt repudiandae molestias dicta quo reprehenderit deleniti quae eligendi
+              optio adipisci ratione amet at autem, quos, libero earum blanditiis? Et.</p>
+            <div class="sticky__block-2">Block-2</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam alias iusto, assumenda
+              aut soluta! Autem eaque laborum minus repudiandae vitae nostrum, architecto quam molestiae illo pariatur
+              non asperiores quod nisi rem tempore maxime minima nobis magnam neque explicabo a fugiat repellat
+              mollitia. Cumque minus itaque accusamus commodi natus fugiat aperiam distinctio odio ut necessitatibus!
+              Doloremque illum doloribus rerum asperiores velit? Nisi, non? Dolorum neque minus repellendus assumenda ex
+              accusantium vitae cupiditate sunt aliquam ab explicabo saepe eligendi facilis ducimus, commodi vero
+              impedit repudiandae nisi, temporibus reiciendis earum! Voluptates eos tenetur ducimus, expedita molestias
+              ipsam sint, hic adipisci sit eum magni ab perferendis sapiente aliquam et fugiat molestiae error
+              exercitationem praesentium assumenda? Sed harum mollitia deleniti fugit, et vel nobis, itaque numquam
+              eaque ex pariatur iste, at expedita magni facere? Eius animi, similique tenetur quis deserunt perspiciatis
+              minus ea eum delectus repudiandae alias vel voluptate consectetur. Soluta amet explicabo repellat magni,
+              dolores iure, facere possimus officiis libero nihil mollitia dolore dignissimos voluptatem inventore
+              consequatur earum provident sunt? Voluptatem magnam nostrum modi perspiciatis a dolore maiores culpa
+              eligendi? Velit ipsa omnis, sunt repudiandae molestias dicta quo reprehenderit deleniti quae eligendi
+              optio adipisci ratione amet at autem, quos, libero earum blanditiis? Et.</p>
+            <div class="sticky__block-3">Block-3</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam alias iusto, assumenda
+              aut soluta! Autem eaque laborum minus repudiandae vitae nostrum, architecto quam molestiae illo pariatur
+              non asperiores quod nisi rem tempore maxime minima nobis magnam neque explicabo a fugiat repellat
+              mollitia. Cumque minus itaque accusamus commodi natus fugiat aperiam distinctio odio ut necessitatibus!
+              Doloremque illum doloribus rerum asperiores velit? Nisi, non? Dolorum neque minus repellendus assumenda ex
+              accusantium vitae cupiditate sunt aliquam ab explicabo saepe eligendi facilis ducimus, commodi vero
+              impedit repudiandae nisi, temporibus reiciendis earum! Voluptates eos tenetur ducimus, expedita molestias
+              ipsam sint, hic adipisci sit eum magni ab perferendis sapiente aliquam et fugiat molestiae error
+              exercitationem praesentium assumenda? Sed harum mollitia deleniti fugit, et vel nobis, itaque numquam
+              eaque ex pariatur iste, at expedita magni facere? Eius animi, similique tenetur quis deserunt perspiciatis
+              minus ea eum delectus repudiandae alias vel voluptate consectetur. Soluta amet explicabo repellat magni,
+              dolores iure, facere possimus officiis libero nihil mollitia dolore dignissimos voluptatem inventore
+              consequatur earum provident sunt? Voluptatem magnam nostrum modi perspiciatis a dolore maiores culpa
+              eligendi? Velit ipsa omnis, sunt repudiandae molestias dicta quo reprehenderit deleniti quae eligendi
+              optio adipisci ratione amet at autem, quos, libero earum blanditiis? Et.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam alias iusto, assumenda
+              aut soluta! Autem eaque laborum minus repudiandae vitae nostrum, architecto quam molestiae illo pariatur
+              non asperiores quod nisi rem tempore maxime minima nobis magnam neque explicabo a fugiat repellat
+              mollitia. Cumque minus itaque accusamus commodi natus fugiat aperiam distinctio odio ut necessitatibus!
+              Doloremque illum doloribus rerum asperiores velit? Nisi, non? Dolorum neque minus repellendus assumenda ex
+              accusantium vitae cupiditate sunt aliquam ab explicabo saepe eligendi facilis ducimus, commodi vero
+              impedit repudiandae nisi, temporibus reiciendis earum! Voluptates eos tenetur ducimus, expedita molestias
+              ipsam sint, hic adipisci sit eum magni ab perferendis sapiente aliquam et fugiat molestiae error
+              exercitationem praesentium assumenda? Sed harum mollitia deleniti fugit, et vel nobis, itaque numquam
+              eaque ex pariatur iste, at expedita magni facere? Eius animi, similique tenetur quis deserunt perspiciatis
+              minus ea eum delectus repudiandae alias vel voluptate consectetur. Soluta amet explicabo repellat magni,
+              dolores iure, facere possimus officiis libero nihil mollitia dolore dignissimos voluptatem inventore
+              consequatur earum provident sunt? Voluptatem magnam nostrum modi perspiciatis a dolore maiores culpa
+              eligendi? Velit ipsa omnis, sunt repudiandae molestias dicta quo reprehenderit deleniti quae eligendi
+              optio adipisci ratione amet at autem, quos, libero earum blanditiis? Et.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <a href="#id-header" class="footer__link">UP</a>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+</body>
+
+</html>
