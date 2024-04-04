@@ -314,7 +314,9 @@ body {
 }
 
 /* fixed */
-
+.fixed--margin {
+  margin-bottom: 30px;
+}
 .fixed__text {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
