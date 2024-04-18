@@ -7,7 +7,7 @@
 /* Загальні стилі */
 
 body {
-  font-family: "OpenSans", serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   color: #212121;
 }
@@ -15,6 +15,13 @@ body {
 .wrapper {
   overflow: clip;
   min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
 }
 
 [class*="__container"] {
@@ -31,7 +38,7 @@ body {
   border: 1px solid #212121;
 }
 /* .header__container {
-  } */
+    } */
 .header__navigation {
 }
 
@@ -188,7 +195,7 @@ body {
 }
 
 .menu__link {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.2;
   text-transform: capitalize;
@@ -198,9 +205,6 @@ body {
   transition: all 0.3s;
 
   /* !==================main========== */
-}
-
-.page {
 }
 
 .highway {
@@ -242,7 +246,7 @@ body {
 /* homework car */
 
 .section__car {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   background-image: url(../img/background/sky.webp);
   background-position: center;
@@ -503,4 +507,385 @@ body {
   opacity: 1;
   left: 0;
   width: 100%;
+}
+
+/* !==================practice page=============== */
+
+.practice {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.transition {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.transition--margin {
+  margin-bottom: 50px;
+}
+
+.transition__item {
+  height: 300px;
+  flex-basis: 300px;
+  background-color: rgb(91, 141, 170);
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.transition__item > p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: lowercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ?=================1================== */
+
+.transition__item:nth-child(1) .transition__element {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 0 auto;
+
+  transition-duration: 0.4s;
+}
+
+.transition__item:nth-child(1):hover .transition__element {
+  background-color: #a5164d;
+}
+
+/* ?=================2================== */
+
+.transition__item:nth-child(2) .transition__element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+
+  transition-duration: 0.2s, 0.4s, 2s;
+  transition-property: width, height, background-color;
+}
+
+.transition__item:nth-child(2):hover .transition__element {
+  width: 150px;
+  height: 150px;
+  background-color: #242a57;
+}
+/* ?================3=================== */
+
+.transition__item:nth-child(3) .transition__element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+
+  transition-duration: 0.2s, 0.4s, 2s;
+  transition-delay: 0s, 0.2s, 0.4s;
+
+  transition-property: width, height, background-color;
+}
+
+.transition__item:nth-child(3):hover .transition__element {
+  width: 250px;
+  height: 150px;
+  background-color: #000;
+}
+/* ?================4=================== */
+
+.transition__item:nth-child(4) .transition__element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+
+  transition-duration: 0.2s, 0.5s;
+  transition-delay: 0s, 0.2s;
+  /* transition-timing-function: steps(2, start); */
+  transition-timing-function: cubic-bezier(0.39, -0.42, 0.47, 1.35);
+
+  transition-property: width, background-color;
+}
+
+.transition__item:nth-child(4):hover .transition__element {
+  width: 250px;
+  background-color: #8ae60a;
+}
+
+/* ?================5=================== */
+
+.transition__item:nth-child(5) .transition__element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+
+  transition: all 0.4s cubic-bezier(0.39, -0.42, 0.47, 1.35) 0.2s;
+}
+
+.transition__item:nth-child(5):hover .transition__element {
+  width: 250px;
+  height: 150px;
+  background-color: #163b05;
+}
+
+/* ?================6=================== */
+
+.transition__item:nth-child(6) {
+  padding-top: 0;
+  position: relative;
+  overflow: clip;
+}
+
+.transition__item:nth-child(6)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: left 0.4s linear;
+}
+
+.transition__item:nth-child(6):hover::after {
+  left: 0;
+}
+
+/* !===================animation=================== */
+
+.animation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.animation--margin {
+  margin-bottom: 50px;
+}
+
+.animation__item {
+  width: 300px;
+  height: 300px;
+  background-color: #1f7460;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.animatin__element {
+  width: 100px;
+  height: 100px;
+  background-color: #500202;
+  margin: 0 auto;
+}
+
+.animation__item > p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: lowercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ?====================1==================== */
+
+.animation__item:nth-child(1):hover .animatin__element {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ?====================2==================== */
+
+.animation__item:nth-child(2) {
+  position: relative;
+}
+
+.animation__item:nth-child(2) .animatin__element {
+  position: absolute;
+}
+
+.animation__item:nth-child(2):hover .animatin__element {
+  animation-name: translate;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes translate {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 65%;
+  }
+}
+
+/* ?====================3==================== */
+
+.animation__item:nth-child(3) {
+  position: relative;
+  padding-top: 0;
+}
+
+.animation__item:nth-child(3) .animatin__element {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  bottom: 10px;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+/* !====================Sun==================== */
+
+.sun {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sun--margin {
+  margin-bottom: 50px;
+}
+.sun__item {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 200px;
+  /* width: 200px; */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+
+  animation-name: rise;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.sun__item:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rise {
+  0% {
+    transform: translate(-250%);
+  }
+
+  100% {
+    transform: translate(250%);
+  }
+}
+
+/* !==============The Newton pendulum============== */
+
+.newton {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-top: 10px solid yellow;
+  position: relative;
+}
+.newton__item {
+  position: absolute;
+  top: -2px;
+  height: 100%;
+  width: 33.33%;
+  transform-origin: top;
+}
+
+.newton__item::before {
+  content: "";
+  width: 5px;
+  margin-left: -2.5px;
+  position: absolute;
+  background-color: #191313;
+  height: 100%;
+  left: 50%;
+}
+
+.newton__item::after {
+  width: 100px;
+  height: 100px;
+  content: "";
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.newton__item:nth-child(1) {
+  left: 0;
+  animation: left-item 1s infinite ease-in alternate;
+}
+.newton__item:nth-child(2) {
+  left: 33.33%;
+}
+.newton__item:nth-child(3) {
+  animation: right-item 1s infinite ease-out alternate;
+  right: 0;
+}
+
+@keyframes left-item {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right-item {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
