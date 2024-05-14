@@ -70,11 +70,191 @@
     </header>
     <main class="page">
       <section class="contact">
-        <h1 class="contact__title">Lesson 16
-        </h1>
-        <p class="contact__top-text">Contact Us</p>
-        <h2 class="contact__sub-title">Request A Call Back !</h2>
+        <div class="contact__container">
+          <h1 class="contact__title">Lesson 16
+          </h1>
+          <p class="contact__top-text">Contact Us</p>
+          <h2 class="contact__sub-title">Request A Call Back !</h2>
+          <form action="#" enctype="multipart/form-data" method="GET" class="contact__form form-contact">
+            <div class="form-contact__wrapper">
+              <div class="form-contact__field">
+                <input required type="text" name="username" class="form-contact__input" placeholder="Your Name">
+              </div>
+              <div class="form-contact__field">
+                <input type="email" name="email" autocomplete="off" class="form-contact__input"
+                  placeholder="Email Address">
+              </div>
+              <div class="form-contact__field">
+                <input type="tel" name="phone" class="form-contact__input" placeholder="Phone Number">
+              </div>
+              <div class="form-contact__field">
+                <input type="text" name="subject" class="form-contact__input" placeholder="Subject">
+              </div>
+            </div>
+            <textarea name="message" class="form-contact__textarea" placeholder="Message..."></textarea>
+            <div class="form-contact__button-wraper">
+              <button class="form-contact__button" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </section>
+      <section class="information">
+        <div class="information__container">
+          <h2 class="information__title">My Info</h2>
+          <p class="information__bottom-text">Add Address</p>
+          <form action="#" method="GET" enctype="multipart/form-data" class="information__form form-information">
+            <div class="from-information__wrapper">
+              <div class="from-information__field">
+
+                <input required id="username" type="text" name="username" class="from-information__input"
+                  autocomplete="off" placeholder>
+                <label for="username">First Name</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="lastname" type="text" name="lastname" class="from-information__input"
+                  autocomplete="off" placeholder>
+                <label for="lastname">Last Name</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="region" type="text" name="region" class="from-information__input" autocomplete="off"
+                  placeholder>
+                <label for="region">Country / Region</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="company" type="text" name="company" class="from-information__input"
+                  autocomplete="off" placeholder>
+                <label for="company">Company Name</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="address" type="text" name="address" class="from-information__input"
+                  autocomplete="off" placeholder>
+                <label for="address">Street Address</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="apartment" type="text" name="apartment" class="from-information__input"
+                  autocomplete="off" placeholder>
+                <label for="apartment">Apt, suite, unit</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="city" type="text" name="city" class="from-information__input" autocomplete="off"
+                  placeholder>
+                <label for="city">City</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="state" type="text" name="state" class="from-information__input" autocomplete="off"
+                  placeholder>
+                <label for="state">State</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="phone" type="text" name="phone" class="from-information__input" autocomplete="off"
+                  placeholder>
+                <label for="phone">Phone</label>
+              </div>
+              <div class="from-information__field">
+
+                <input required id="postal" type="text" name="postal" class="from-information__input" autocomplete="off"
+                  placeholder>
+                <label for="postal">Postal Code</label>
+              </div>
+            </div>
+            <div class="form-information__textarea">
+              <label for="delivery">Delivery Instruction</label>
+              <textarea class="form-information__field" name="delivery" id="delivery" name="delivery"
+                placeholder="Delivery Instruction"></textarea>
+            </div>
+            <div class="form-information__checkbox-wrapp">
+              <div class="form-information__checkbox checkbox">
+                <input type="checkbox" name="address-check" id="address-check" class="checkbox__input">
+                <label class="checkbox__label" for="address-check">
+                  <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
+                        fill="white" stroke="white" stroke-width="0.2" />
+                    </svg></span>
+                  Set as default shipping address</label>
+              </div>
+              <div class="form-information__checkbox checkbox">
+                <input type="checkbox" name="billing" id="billing" class="checkbox__input">
+                <label class="checkbox__label" for="billing">
+                  <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
+                        fill="white" stroke="white" stroke-width="0.2" />
+                    </svg></span>
+                  Set as default shipping address</label>
+              </div>
+            </div>
+            <div class="form-information__button">
+              <button type="submit">Save</button>
+              <button type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- <section class="billing">
+        <div class="billing__container">
+          <h2 class="billing__title">Check Out</h2>
+          <p class="billing__bottom-text">Billing Details</p>
+          <form action="#" enctype="multipart/form-data" method="GET" class="billing__form form-billing">
+            <div class="form-billing__wrapper">
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="first-name">First Name*</label>
+                <input id="first-name" name="first-name" type="text" class="form-billing__input"
+                  placeholder="First Name">
+              </div>
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="last-name">Last Name*</label>
+                <input id="last-name" name="last-name" type="text" class="form-billing__input" placeholder="Last Name">
+              </div>
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="region">Country / Region*</label>
+                <input id="region" name="region" type="text" class="form-billing__input" placeholder="Country / Region">
+              </div>
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="company">Company Name</label>
+                <input id="company" name="company" type="text" class="form-billing__input"
+                  placeholder="Company (optional)">
+              </div>
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="street-address">Street Address*</label>
+                <input id="street-address" name="street-address" type="text" class="form-billing__input"
+                  placeholder="House number and street name">
+              </div>
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="apartment">Apt, suite, unit</label>
+                <input id="apartment" name="apartment" type="text" class="form-billing__input"
+                  placeholder="apartment, suite, unit, etc. (optional)">
+              </div>
+            </div>
+            <div class="form-billing__wrapper form-billing__wrapper--three-forms">
+              <div class="form-billing__field">
+                <label class="form-billing__label" for="city">City*</label>
+                <input id="city" name="city" type="text" class="form-billing__input" placeholder="Town / City">
+
+              </div>
+              <div class="form-billing__field">
+                <select name="state" id="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </section> -->
     </main>
     <footer class="footer">
       <div class="footer__container">
