@@ -199,15 +199,15 @@
           </form>
         </div>
       </section>
-      <!-- <section class="billing">
+      <section class="billing">
         <div class="billing__container">
           <h2 class="billing__title">Check Out</h2>
           <p class="billing__bottom-text">Billing Details</p>
           <form action="#" enctype="multipart/form-data" method="GET" class="billing__form form-billing">
-            <div class="form-billing__wrapper">
+            <div class="form-billing__wrapper form-billing__wrapper--margin">
               <div class="form-billing__field">
                 <label class="form-billing__label" for="first-name">First Name*</label>
-                <input id="first-name" name="first-name" type="text" class="form-billing__input"
+                <input required id="first-name" name="first-name" type="text" class="form-billing__input"
                   placeholder="First Name">
               </div>
               <div class="form-billing__field">
@@ -234,27 +234,162 @@
                   placeholder="apartment, suite, unit, etc. (optional)">
               </div>
             </div>
-            <div class="form-billing__wrapper form-billing__wrapper--three-forms">
-              <div class="form-billing__field">
+            <div class="form-billing__wrapper form-billing__wrapper--three-column">
+              <div class="form-billing__field form-billing__field--three-column">
                 <label class="form-billing__label" for="city">City*</label>
                 <input id="city" name="city" type="text" class="form-billing__input" placeholder="Town / City">
+              </div>
+              <div class="form-billing__field form-billing__field--three-column">
+                <label for="area" class="form-billing__label">State*</label>
+                <select class="form-billing__select" name="state-area" id="area">
+                  <option class="form-billing__option" value="" disabled="" selected="" hidden="">State</option>
+                  <option class="form-billing__option" value="europe">Europe</option>
+                  <option class="form-billing__option" value="usa">America</option>
+                  <option class="form-billing__optio" value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-billing__field form-billing__field--three-column">
+                <label class="form-billing__label" for="post-code">Postal Code*</label>
+                <input id="post-code" name="post-code" type="text" class="form-billing__input"
+                  placeholder="Postal Code">
+              </div>
+            </div>
+            <div class="form-billing__field form-billing__field--phone">
+              <label class="form-billing__label" for="phone">Phone*</label>
+              <input id="phone" name="phone" type="tel" class="form-billing__input" placeholder="Phone">
+            </div>
+            <button type="submit" class="form-billing__button">Continue to delivery</button>
+            <div class="form-billing__checkbox checkbox">
+              <input type="checkbox" name="save-information" id="save-information" class="checkbox__input">
+              <label class="checkbox__label" for="save-information">
+                <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
+                      fill="white" stroke="white" stroke-width="0.2" />
+                  </svg></span>
+                Save my information for a faster checkout</label>
+            </div>
+
+
+
+          </form>
+          <form action="#" method="GET" enctype="multipart/form-data" class="shipping__form  payment-form">
+            <div class="payment-form__body payment-form__body--margin">
+              <div class="payment-form__item">
+                <h2 class="payment-form__title payment-form__title--margin">Shipping Address</h2>
+                <p class="payment-form__text payment-form__text--margin">Select the address that matches your card or
+                  payment method.</p>
+                <div class="payment-form__radio-wrap">
+                  <div class="payment-form__radio">
+                    <input class="payment-form__input-radio" type="radio" name="address" id="billing-address"
+                      value="billing-address" checked>
+                    <label class="payment-form__label-radio" for="billing-address">Same as Billing address</label>
+                  </div>
+                  <div class="payment-form__radio">
+                    <input class="payment-form__input-radio" type="radio" name="address" id="shipping-address"
+                      value="shipping-address">
+                    <label class="payment-form__label-radio" for="shipping-address">Same as Billing address</label>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-form__item">
+                <h2 class="payment-form__title payment-form__title--margin">Shipping Method</h2>
+                <div class="payment-form__radio-wrap">
+                  <div class="payment-form__wrap-sub-title">
+                    <h3 class="payment-form__sub-title">Arrives by Monday, June 7</h3>
+                  </div>
+                  <div class="payment-form__wrap-box ">
+                    <div class="payment-form__text">
+                      <h3 class="payment-form__sub-title payment-form__sub-title--margin">Delivery Charges</h3>
+                      <p class="payment-form__bottom-text">Additional fess may apply</p>
+                    </div>
+                    <div class="payment-form__price">
+                      $5.00
+                    </div>
+
+                  </div>
+
+
+                </div>
+
 
               </div>
-              <div class="form-billing__field">
-                <select name="state" id="">
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
+              <div class="payment-form__item">
+                <h3 class="payment-form__title">Payment Method</h3>
+                <p class="payment-form__text payment-form__text--margin">All transactions are secure and encrypted.</p>
+                <div class="payment-form__radio-wrap">
+                  <div class="payment-form__radio-row">
+                    <div class="payment-form__wrap-input payment-form__wrap-input--margin">
+                      <input checked type="radio" class="payment-form__radio-input" id="card-payment" name="cash">
+                      <label class="payment-form__radio-label" for="card-payment">Credit Card
+                      </label>
+                      <p class="payment-form__radio-text">We accept all major
+                        credit cards.</p>
+                    </div>
+                    <div class="payment-form__type-payment type-payment">
+                      <input class="type-payment__input" id="google-pay" type="radio" name="payment-type">
+                      <label class="type-payment__label" for="google-pay">
+                        <img src="img/payment/google-pay.svg" alt="google-pay">
+                      </label>
+                      <input class="type-payment__input" id="visa" type="radio" name="payment-type">
+                      <label class="type-payment__label" for="visa">
+                        <img src="img/payment/visa.svg" alt="visa">
+                      </label>
+                      <input class="type-payment__input" id="pay-pal" type="radio" name="payment-type">
+                      <label class="type-payment__label" for="pay-pal">
+                        <img src="img/payment/pay-pal.svg" alt="pay-pal">
+                      </label>
+                      <input class="type-payment__input" id="pay-pass" type="radio" name="payment-type">
+                      <label class="type-payment__label" for="pay-pass">
+                        <img src="img/payment/pay-pass.svg" alt="pay-pass">
+                      </label>
+                    </div>
+                    <div class="payment-form__card-information information-card">
+                      <div class="information-card__wrap-input">
+                        <input name="card-number" type="number" class="information-card__input"
+                          placeholder="Card number">
+                      </div>
+                      <div class="information-card__wrap-input">
+                        <input name="card-name" type="text" class="information-card__input" placeholder="Name of card">
+                      </div>
+                      <div class="information-card__wrap-input">
+                        <input name="card-number" type="number" class="information-card__input"
+                          placeholder="Expiration date (MM/YY)">
+                      </div>
+                      <div class="information-card__wrap-input">
+                        <input name="card-number" type="password" class="information-card__input"
+                          placeholder="Security Code">
+                        <button class="information-card__button">
+                          <img src="img/payment/eye.svg" alt="eyes">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-form__radio-row">
+                    <div class="payment-form__wrap-input">
+                      <input type="radio" class="payment-form__radio-input" id="delivery-cash" name="cash">
+                      <label class="payment-form__radio-label" for="delivery-cash">Cash on delivery
+                      </label>
+                      <p class="payment-form__radio-text">Pay with cash upon delivery.</p>
+                    </div>
+                  </div>
+                  <div class="payment-form__radio-row">
+                    <div class="payment-form__wrap-input">
+                      <input type="radio" class="payment-form__radio-input" id="pay-pal-cash" name="cash">
+                      <label class="payment-form__radio-label" for="pay-pal-cash">Paypol
+                      </label>
+                    </div>
 
+                  </div>
+                </div>
 
               </div>
             </div>
+            <button class="payment-form__button" type="submit">Pay Now</button>
 
           </form>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container">
