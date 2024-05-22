@@ -610,6 +610,207 @@ body {
 
 /* ==================================== */
 
+/* !section bussines */
+
+.page__business {
+}
+.business {
+  padding-top: 138px;
+  padding-bottom: 142px;
+  background-color: #37393f;
+  position: relative;
+}
+.business__container {
+}
+.business__content {
+  max-width: 650px;
+}
+.business__top-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.business__top-text::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+}
+
+.business__top-text--margin {
+  margin-bottom: 13px;
+}
+
+.business__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 121%;
+  color: #fff;
+  max-width: 382px;
+}
+
+.business__title--margin {
+  margin-bottom: 13px;
+}
+
+.business__bottom-text p {
+  font-size: 18px;
+  line-height: 146%;
+  color: #fff;
+}
+
+.business__bottom-text--margin {
+  margin-bottom: 36px;
+}
+
+.business__rating {
+}
+.rating {
+  display: flex;
+  gap: 15px;
+}
+
+.rating--margin {
+  margin-bottom: 36px;
+}
+
+.rating__item {
+  padding: 27px 30px 27px 30px;
+  background-color: #2e2f34;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-basis: calc((100% - 15px) / 2);
+}
+.rating__image {
+  border-radius: 50%;
+  height: 79px;
+  width: 79px;
+}
+.rating__text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.rating__sub-title {
+  font-size: 16px;
+  line-height: 135%;
+  color: #fff;
+}
+.rating__text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.business__follower {
+}
+.follower {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 37px;
+  column-gap: 23px;
+}
+.follower__item {
+  flex-basis: calc((100% - 37px) / 2);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.follower__item:not(:last-child) {
+  font-size: 20px;
+  color: #fff;
+}
+
+.follower__item:not(:last-child)::before {
+  content: "";
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url(../img/section-business/check-icon.svg);
+  background-repeat: no-repeat;
+  min-height: 27px;
+}
+
+.follower__bold {
+  font-weight: 700;
+}
+
+.follower__yellow {
+  color: #ffb342;
+}
+
+.follower__star {
+  position: relative;
+  padding-right: 19px;
+}
+
+.follower__star::after {
+  content: "";
+  position: absolute;
+
+  width: 17px;
+  height: 18px;
+  top: 5px;
+  left: 16px;
+  background-image: url(../img/section-business/star.svg);
+  background-repeat: no-repeat;
+}
+
+.follower__yellow span {
+  width: 17px;
+}
+
+.follower__item:last-child {
+  position: relative;
+}
+
+.follower__item:last-child::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  display: inline-block;
+  width: 120px;
+  height: 3px;
+  background-color: #40ddb6;
+}
+
+.follower__star {
+}
+.follower__link {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #40ddb6;
+}
+.business__background {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45%;
+}
+
+.business__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+/* ==================================== */
+
 /* section-ring */
 @media (min-width: 897.98px) {
   .ring__list {
@@ -702,5 +903,49 @@ body {
 @media (max-width: 479.98px) {
   .block-decoration__item {
     flex-basis: 100%;
+  }
+}
+
+/* section - business */
+
+@media (max-width: 1218px) {
+  .business__background {
+    display: none;
+  }
+
+  .business__content {
+    max-width: 100%;
+  }
+
+  .business__top-text {
+    justify-content: center;
+  }
+
+  .business__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 656px) {
+  .rating {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .follower {
+    display: flex;
+    flex-direction: column;
+    column-gap: 23px;
+  }
+  .follower__item:last-child::before {
+    bottom: -6px;
+  }
+}
+
+@media (max-width: 456px) {
+  .business__title {
+    font-size: 26px;
   }
 }
