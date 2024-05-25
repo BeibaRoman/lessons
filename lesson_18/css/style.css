@@ -426,6 +426,7 @@ body {
   border: 1px solid var(--second-primery-color);
   border-radius: 215px;
   padding: 20px;
+  z-index: 5;
 }
 
 .content-hero {
