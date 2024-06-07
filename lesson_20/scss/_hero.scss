@@ -1,0 +1,139 @@
+// // ! hero
+
+// .page {
+//   // .page__hero
+
+//   &__hero {
+//     padding-top: 130px;
+//     background: url(../img/hero/hero-background.webp) center / cover no-repeat;
+//   }
+// }
+// .hero {
+//   // .hero__body
+
+//   &__body {
+//     background-color: rgba(55, 57, 63, 0.91);
+//     max-width: 40%;
+//     padding: 205px 116px 204px 117px;
+//     @media (max-width: 1742.98px) {
+//       padding: 150px 80px 150px 80px;
+//     }
+//   }
+
+//   // .hero__content
+
+//   &__content {
+//     max-width: 529px;
+//   }
+
+//   // .hero__lable
+
+//   &__lable {
+//     font-weight: 600;
+//     line-height: 1.46;
+//     color: $btnColorText;
+//     margin-bottom: 10px;
+//     display: flex;
+//     gap: 7px;
+//     align-items: center;
+
+//     &::before {
+//       content: "";
+//       width: 11px;
+//       height: 11px;
+//       background-color: #40ddb6;
+//     }
+//   }
+
+//   // .hero__title
+
+//   &__title {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 700;
+//     font-size: 60px;
+//     line-height: 1.1;
+//     color: $btnColorText;
+//     margin-bottom: 20px;
+
+//     span {
+//       color: #40ddb6;
+//     }
+//   }
+
+//   // .hero__text
+
+//   &__text {
+//     max-width: 482px;
+//     margin-bottom: 35px;
+//     p {
+//       font-weight: 500;
+//       line-height: 1.46;
+//       color: #b9b9b9;
+//     }
+//   }
+
+//   // .hero__action
+
+//   &__action {
+//     display: flex;
+//     gap: 30px;
+//   }
+
+//   // .hero__button
+
+//   &__button {
+//     font-weight: 600;
+//     text-transform: capitalize;
+//     color: $mainTextColor;
+//     padding: 21px 27px;
+//     background-color: #40ddb6;
+//     flex-shrink: 0;
+//     transition: background-color 0.3s;
+
+//     &:hover {
+//       background-color: #2a987c;
+//     }
+//   }
+
+//   // .hero__link
+
+//   &__link {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//     flex-shrink: 0;
+//     overflow: hidden;
+
+//     span {
+//       font-weight: 600;
+//       text-transform: capitalize;
+//       text-align: center;
+//       color: $btnColorText;
+//       display: flex;
+//       flex-direction: column;
+//       row-gap: 2px;
+//       position: relative;
+
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         height: 2px;
+//         width: 100%;
+//         bottom: -5px;
+//         left: 0;
+//         display: block;
+//         transition: all ease 0.5s;
+
+//         background-color: $btnColorText;
+//         transition: all 0.3s;
+//       }
+
+//       &:hover {
+//         &::after {
+//           left: 50%;
+//           width: 0;
+//         }
+//       }
+//     }
+//   }
+// }
