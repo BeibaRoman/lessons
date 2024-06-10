@@ -1,0 +1,42 @@
+// reset styles
+@import "_reset.scss";
+
+// Fonts
+@import "_fonts.scss";
+
+// color vars
+$mainTextColor: #807d7e;
+$blackTextColor: #3c4242;
+$accentColor: #8a33fd;
+
+// main styles
+body {
+  font-family: "Causten", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: $mainTextColor;
+}
+
+// wrapper
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+// container
+[class*="__container"] {
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+// header
+@import "_header.scss";
