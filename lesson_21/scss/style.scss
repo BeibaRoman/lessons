@@ -8,6 +8,7 @@
 $mainTextColor: #807d7e;
 $blackTextColor: #3c4242;
 $accentColor: #8a33fd;
+$secondMainColor: #ffffff;
 
 // main styles
 body {
@@ -40,3 +41,6 @@ body {
 
 // header
 @import "_header.scss";
+
+// section hero
+@import "_hero.scss";

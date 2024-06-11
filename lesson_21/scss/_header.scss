@@ -1,5 +1,9 @@
 .header {
+  background-color: $secondMainColor;
   border-bottom: 1px solid #bebcbd;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
   // .header__container
   &__container {
     display: flex;
@@ -52,7 +56,7 @@
       flex-direction: column;
       text-align: right;
       row-gap: 30px;
-      background-color: #fff;
+      background-color: $secondMainColor;
       transition: right 0.5s ease;
 
       &::before {
@@ -63,7 +67,7 @@
         height: 70px;
         width: 100%;
         z-index: 2;
-        background-color: #fff;
+        background-color: $secondMainColor;
         transition: right 0.5s ease;
       }
     }
@@ -154,7 +158,7 @@
     &::placeholder {
       font-weight: 400;
       font-size: 16px;
-      color: #807d7e;
+      color: $mainTextColor;
     }
   }
 }
@@ -191,7 +195,7 @@
     &::placeholder {
       font-weight: 400;
       font-size: 16px;
-      color: #807d7e;
+      color: $mainTextColor;
     }
   }
 }
@@ -216,9 +220,9 @@
 
     @media (any-hover: hover) {
       &:hover {
-        background-color: #8a33fd;
+        background-color: $accentColor;
         svg path {
-          stroke: #ffffff;
+          stroke: $secondMainColor;
         }
       }
     }
