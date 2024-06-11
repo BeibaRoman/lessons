@@ -538,14 +538,23 @@ body {
 @media (max-width: 970px) {
   .page {
     padding-top: 70px;
-    padding-bottom: 70px;
   }
 }
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100svh - 70px);
 }
 .hero__container {
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 .hero__content {
   padding: 129px 0 132px 0px;
