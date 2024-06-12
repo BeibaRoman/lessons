@@ -1,16 +1,16 @@
 .card {
   background-color: $secondMainColor;
   padding-top: 130px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 
   @media (max-width: 769.98px) {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   @media (max-width: 405.98px) {
     padding-top: 70px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   // .card__container
