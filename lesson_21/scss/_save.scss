@@ -82,6 +82,7 @@
     color: $blackTextColor;
     padding: 65px 20px;
     border-radius: 12px;
+    overflow: clip;
 
     @media (max-width: 769.98px) {
       padding: 40px 15px;
@@ -89,6 +90,13 @@
     @media (max-width: 652.98px) {
       .card-item__image {
         object-position: 0 0;
+      }
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        .card-item__image {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -182,6 +190,7 @@
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+    transition: all 0.3s;
   }
 
   // .card-item__body

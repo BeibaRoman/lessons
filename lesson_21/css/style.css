@@ -1229,6 +1229,7 @@ body {
   color: #3c4242;
   padding: 65px 20px;
   border-radius: 12px;
+  overflow: clip;
 }
 @media (max-width: 769.98px) {
   .save__item-card {
@@ -1239,6 +1240,13 @@ body {
   .save__item-card .card-item__image {
     -o-object-position: 0 0;
        object-position: 0 0;
+  }
+}
+@media (any-hover: hover) {
+  .save__item-card:hover .card-item__image {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 .save__item-card--first .card-item__body {
@@ -1305,6 +1313,8 @@ body {
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .card-item__body {
   position: relative;
