@@ -1,0 +1,145 @@
+.page {
+  // .page__fashion
+
+  &__fashion {
+  }
+}
+.fashion {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media (max-width: 970px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 405.98px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  // .fashion__container
+
+  &__container {
+  }
+
+  // .fashion__body
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 970px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  // .fashion__block
+
+  &__block {
+    padding: 183px 74px 175px 74px;
+    height: 100%;
+    &:first-child {
+      background: url(../img/fashion/background-1.webp) center / cover no-repeat;
+
+      border-radius: 10px 0 0 10px;
+      @media (max-width: 970px) {
+        border-radius: 10px;
+      }
+    }
+    &:last-child {
+      background: url(../img/fashion/background-2.webp) center / cover no-repeat;
+
+      border-radius: 0 10px 10px 0;
+
+      @media (max-width: 970px) {
+        display: none;
+      }
+    }
+    @media (max-width: 769.98px) {
+      padding: 123px 54px 115px 54px;
+    }
+    @media (max-width: 652.98px) {
+      padding: 80px 34px 80px 34px;
+    }
+    @media (max-width: 405.98px) {
+      padding: 50px 15px 50px 15px;
+    }
+  }
+}
+.block-fashion {
+  // .block-fashion__content
+
+  &__content > * {
+    margin-bottom: 30px;
+    @media (max-width: 405.98px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    @media (max-width: 970px) {
+      text-align: center;
+    }
+  }
+
+  // .block-fashion__title
+
+  &__title {
+    font-family: "Core Sans C", sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.47;
+    letter-spacing: 0.01em;
+    color: $secondMainColor;
+    @media (max-width: 769.98px) {
+      font-size: 28px;
+    }
+    @media (max-width: 405.98px) {
+      font-size: 24px;
+    }
+  }
+
+  // .block-fashion__text
+
+  &__text {
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      color: $secondMainColor;
+    }
+
+    margin-bottom: 50px;
+    @media (max-width: 769.98px) {
+      font-size: 18px;
+    }
+    @media (max-width: 405.98px) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+
+  // .block-fashion__link
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: $blackTextColor;
+
+    padding: 12px 44px;
+    border-radius: 8px;
+    background-color: $secondMainColor;
+    transition: background-color 0.3s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #c2acac;
+      }
+    }
+    @media (max-width: 769.98px) {
+      padding: 10px 34px;
+    }
+  }
+
+  &__content > *:last-child {
+    margin-bottom: 0;
+  }
+}
