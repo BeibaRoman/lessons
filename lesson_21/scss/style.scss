@@ -9,6 +9,8 @@ $mainTextColor: #807d7e;
 $blackTextColor: #3c4242;
 $accentColor: #8a33fd;
 $secondMainColor: #ffffff;
+$subTitleColor: #2a2f2f;
+$textDescriptionColor: #7f7f7f;
 
 // main styles
 body {
@@ -56,3 +58,12 @@ body {
 
 // section fashion
 @import "_fashion.scss";
+
+// section men
+@import "_men.scss";
+
+// section women
+@import "_women.scss";
+
+// section brands
+@import "_brands.scss";
