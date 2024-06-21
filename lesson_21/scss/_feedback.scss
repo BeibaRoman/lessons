@@ -1,0 +1,157 @@
+.page {
+  // .page__feedback
+
+  &__feedback {
+  }
+}
+.feedback {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  @media (max-width: 769.98px) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 405.98px) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  // .feedback__container
+
+  &__container {
+  }
+
+  // .feedback__title
+
+  &__title {
+    font-family: "Core Sans C", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 99%;
+    letter-spacing: 0.02em;
+    color: $blackTextColor;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      border-radius: 10px;
+      width: 6px;
+      height: 30px;
+      background-color: $accentColor;
+    }
+
+    @media (max-width: 970px) {
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+
+    @media (max-width: 769.98px) {
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    @media (max-width: 530.98px) {
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+  }
+
+  // .feedback__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    margin-bottom: 13px;
+    @media (max-width: 970px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 582px) {
+      grid-template-columns: auto;
+      gap: 18px;
+    }
+  }
+
+  // .feedback__item
+
+  &__item {
+    border: 1.8px solid #bebcbd;
+    border-radius: 10px;
+    background-color: $secondMainColor;
+    padding: 23px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 582px) {
+      gap: 15px;
+    }
+  }
+
+  // .feedback__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  // .feedback__avatar
+
+  &__avatar {
+    width: 58px;
+    height: 58px;
+  }
+
+  // .feedback__rating
+
+  &__rating {
+    width: 131px;
+    height: 23px;
+  }
+
+  // .feedback__sub-title
+
+  &__sub-title {
+    font-family: "Core Sans C", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: $blackTextColor;
+    @media (max-width: 582px) {
+      font-size: 18px;
+    }
+  }
+
+  // .feedback__text
+
+  &__text {
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      // color: #807d7e;
+    }
+  }
+
+  // .feedback__list
+
+  &__list {
+  }
+}
+.list {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  padding: 8px;
+
+  // .list__item
+
+  &__item {
+  }
+}
