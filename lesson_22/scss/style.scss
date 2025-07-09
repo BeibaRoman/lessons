@@ -1,0 +1,29 @@
+// reset
+@import "base/_reset.scss";
+// fonts
+@import "fonts/_fonts.scss";
+
+
+// variables
+@import "utils/_variables.scss";
+// functions
+@import "utils/_functions.scss";
+
+
+// common
+@import "base/_common.scss";
+
+
+// components
+@import "components/_button.scss";
+@import "components/_logo.scss";
+@import "components/_socials.scss";
+@import "components/_label.scss";
+@import "components/_title.scss";
+@import "components/_sub-menu.scss";
+@import "components/_burger.scss";
+
+
+// layouts
+@import "layouts/_header.scss";
+@import "layouts/_hero.scss";

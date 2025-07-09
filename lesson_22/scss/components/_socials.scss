@@ -1,0 +1,31 @@
+.socials {
+  display: none;
+
+
+  // .socials__item
+
+  &__item {
+
+
+
+    @media (any-hover: hover) {
+      &:hover {
+        .socials__link {
+          transform: scale(1.2);
+
+          svg path {
+            fill: $greenAccentColor;
+          }
+
+        }
+      }
+
+    }
+  }
+
+  // .socials__link
+
+  &__link {
+    transition: all 0.3s ease;
+  }
+}

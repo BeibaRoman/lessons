@@ -1,0 +1,44 @@
+.icon-menu {
+  @media (max-width: toEm(968)) {
+    display: block;
+    flex: 0 0 toRem(30);
+    width: toRem(30);
+    height: toRem(18);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: toRem(2);
+      background-color: $thirdPrimaryTextColor;
+      transition: all 0.3s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: toRem(2);
+      background-color: $thirdPrimaryTextColor;
+      transition: all 0.3s;
+    }
+
+    span {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: toRem(-1);
+      width: 100%;
+      height: toRem(2);
+      background-color: $thirdPrimaryTextColor;
+      transition: all 0.3s;
+    }
+
+  }
+}
