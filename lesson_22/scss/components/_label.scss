@@ -1,0 +1,22 @@
+.label {
+  font-weight: 600;
+  line-height: 1.46;
+  color: $secondPrimaryTextColor;
+
+  display: flex;
+  align-items: center;
+  column-gap: toRem(7);
+
+  &:not(:last-child) {
+    margin-bottom: toRem(10);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex: 0 0 toRem(11);
+    width: toRem(11);
+    height: toRem(11);
+    background-color: $greenAccentColor;
+  }
+}

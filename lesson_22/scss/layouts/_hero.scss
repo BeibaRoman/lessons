@@ -1,9 +1,120 @@
-.page {
+.hero {
+  position: relative;
+  padding-top: toRem(190);
+  width: 100%;
+  overflow: hidden;
 
-  // .page__hero
+  // .hero__image
 
-  &__hero {
-    background-color: $primaryTextColor;
-    height: 500px;
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  // .hero__background
+
+  &__background {
+    position: relative;
+    z-index: 1;
+    max-width: toRem(753);
+
+    background-color: rgba(55, 57, 63, 0.91);
+    padding: toRem(205) toRem(116) toRem(204) toRem(117);
+  }
+
+  // .hero__label
+
+  // &__label {}
+
+  // .hero__title
+
+  &__title {
+    font-family: "Poppins",
+      sans-serif;
+    font-weight: 700;
+    font-size: toRem(60);
+    line-height: 1.10;
+    color: $secondPrimaryTextColor;
+
+    span {
+      color: $greenAccentColor;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+
+  // .hero__text
+
+  &__text {
+    max-width: toRem(482);
+
+    p {
+      font-weight: 500;
+      line-height: 1.46;
+      color: #b9b9b9;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: toRem(35);
+    }
+
+  }
+
+  // .hero__action
+
+  &__action {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(30);
+  }
+
+  // .hero__button-link
+
+  &__button-link {
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color: $thirdPrimaryTextColor;
+    padding: toRem(22) toRem(27);
+    background-color: $greenAccentColor;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $greenAccentHoverColor;
+    }
+
+  }
+
+  // .hero__button
+
+  &__button {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(10);
+
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color: $secondPrimaryTextColor;
+    transition: color 0.3s ease;
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: $greenAccentHoverColor;
+
+      svg {
+        transform: scale(1.1);
+      }
+    }
   }
 }
